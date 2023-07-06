@@ -9,7 +9,7 @@ const Form = () => {
 
   return (
     <section className="container">
-      <h4>Color Shades Spawner</h4>
+      <h4>Color Shades and Tint Spawner</h4>
       <form className="color-form" onSubmit={onSubmitHandler}>
         <input type="color" value={color} onChange={colorChangeHandler} />
         <input

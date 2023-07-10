@@ -54,7 +54,3 @@ Once you have the Color Generator React app running locally, you can start using
 ## Credits
 
 This React app built with Vite was developed by [ProfessorBunny] as a simple demonstration of color manipulation using React, values.js, and React Toastify.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

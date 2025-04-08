@@ -18,11 +18,10 @@ const SingleColor = (props) => {
     <article
       className={props.index > 10 ? 'color color-light' : 'color'}
       style={{ background: `#${hex}` }}
+      onClick={clickHandler}
     >
       <p className="percent-value">{weight}%</p>
-      <p className="color-value" onClick={clickHandler}>
-        #{hex}
-      </p>
+      <p className="color-value">#{hex}</p>
     </article>
   )
 }

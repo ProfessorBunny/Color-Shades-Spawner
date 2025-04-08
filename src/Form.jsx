@@ -1,19 +1,19 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 const Form = ({ addColor }) => {
-  const [color, setColor] = useState("");
+  const [color, setColor] = useState('')
   const colorChangeHandler = (e) => {
-    setColor(e.target.value);
-  };
-  const onSubmitHandler = (e) => {
-    e.preventDefault();
-    addColor(color);
-  };
+    setColor(e.target.value)
+  }
+  const submitHandler = (e) => {
+    e.preventDefault()
+    addColor(color)
+  }
 
   return (
     <section className="container">
       <h4>Color Shades and Tint Spawner</h4>
-      <form className="color-form" onSubmit={onSubmitHandler}>
+      <form className="color-form" onSubmit={submitHandler}>
         <input type="color" value={color} onChange={colorChangeHandler} />
         <input
           type="text"
@@ -26,6 +26,6 @@ const Form = ({ addColor }) => {
         </button>
       </form>
     </section>
-  );
-};
-export default Form;
+  )
+}
+export default Form

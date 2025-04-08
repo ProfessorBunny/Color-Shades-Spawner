@@ -8,10 +8,10 @@ const App = () => {
   const [colorsList, setColorsList] = useState(new Values('#FF0000').all(10))
   const addColor = (color) => {
     try {
-      const colorValues = new Values(color)
-      const colorList = colorValues.all(10)
-      setColorsList(colorList)
-      // setColorsList(new Values(color).all(10))
+      // const colorValues = new Values(color)
+      // const colorList = colorValues.all(10)
+      // setColorsList(colorList)
+      setColorsList(new Values(color).all(10))
     } catch (error) {
       toast.error(error.message)
     }
